@@ -1,0 +1,25 @@
+<script>
+    function f1(callback){
+       var a=prompt("ENter the value of a");
+       var b=prompt("ENter the value of b");
+       var c=prompt("ENter the value of c");
+        callback(a,b,c);
+    }
+   f1(function(a,b,c){
+    if(Number.isNaN(a)||Number.isNaN(b)||Number.isNaN(c)){
+        document.write("Invalid Input");
+    }
+    else{
+        if(a>b&&a>c){
+            document.write("a is greater :"+a);
+        }
+        else if(b>c){
+            document.write("B is greater :"+b);
+        }
+        else{
+            document.write("c is grater :"+c);
+        }
+    }
+   })
+
+</script>

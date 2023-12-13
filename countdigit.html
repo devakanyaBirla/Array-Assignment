@@ -1,0 +1,18 @@
+<body>
+    <script>
+        function countNumber() {
+            var n = prompt("enter number for count digit number");
+            // document.write("Count number<br>");
+             var count=0;
+             while(n>0) {
+                var r = n%10;
+                count++;
+                n=parseInt(n/10);
+            }
+            document.write("count of digits :"+count);
+           }
+    </script>
+    <form>
+        <button onclick="countNumber();">check count number
+    </form>
+</body>

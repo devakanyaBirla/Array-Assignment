@@ -1,0 +1,44 @@
+<!-- 
+1
+12
+1 3
+1  4
+12345
+-->
+
+<body>
+    <pre>
+    <script>
+            function pattern(callback) {
+                var n = prompt("enter number of row") * 1;
+                if (Number.isNaN(n)) {
+                    callback(new Error("please enter only number"));
+                }
+                else {
+                    callback(null, n)
+                }
+            }
+    
+            pattern(function (err, n) {
+                if (err) {
+                    document.write(err);
+                }
+                else {
+                    document.write("Pattern <br>");
+                    var x=1;
+                    for (var i = 1; i <= n; i++) {
+                        for (var j = 1; j <= i; j++) {
+                        if(i==n || i==j || j==1){
+                            document.write(j);
+                        }
+                        else{
+                            document.write(" ");
+                        }
+                        }
+                        document.write("<br>");
+                    }
+                }
+            })
+    </script>
+    </pre>
+    </body>

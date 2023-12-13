@@ -1,0 +1,27 @@
+<!-- 
+       *
+      *_*
+     *___* 
+    *_____* 
+   *********
+ -->
+<pre>
+<script>
+    var i, j;
+    var n = 5;
+    for (i = 1; i <= n * 2; i += 2) {
+        for (sp = n * 2 - i; sp >= 1; sp -= 2) {
+            document.write(" ");
+        }
+        for (j = 1; j <= i; j++) {
+            if (i % 2 != 0) {
+                if(i==j||i==n*2-1||j==1)
+                document.write("*");
+               else
+               document.write("_");
+            }
+        }
+        document.write("<br>");
+    }
+</script>    
+</pre>

@@ -1,0 +1,47 @@
+<!-- 
+1
+12
+123
+1234
+123
+12
+1
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<pre>
+<script>
+var i,j,n=5;
+for(i=1;i<=n;i++){
+    for(j=1;j<=n*2-1;j++){
+        if(i<=4){
+            if(j<=i){
+                document.write("*");
+            }
+            else{
+                document.write(" ");
+            }
+        }
+        else if(i>4){
+                if(j<n+1-i){
+                    document.write("*");
+                }
+                else{
+                    document.write(" ");
+                }
+            }
+    
+    }
+    document.write("<br>");
+}
+
+</script>
+</pre>
+</body>
+</html>

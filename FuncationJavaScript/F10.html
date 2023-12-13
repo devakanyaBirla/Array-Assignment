@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function number(callback){
+   var a=prompt("enter age")*1;
+   if(Number.isNaN(a)){
+     callback ( new Error("please enter only number"));
+   }  
+   else{
+    callback(null,a);
+   }
+}
+number(function(err,a){
+    if(err){
+        document.write(err);
+    }
+     else if(a>=18){
+        document.write("Elligible for vote");
+    }
+    else{
+        document.write("Not elligible for vote");
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // function addition(a,b,callback){
+        //  if(typeof(a)!="number"||typeof(b)!="number"){
+        //      callback(new Error("Invalid Input"));
+        //  }
+        //  else{
+        //      var age=prompt("ENter the age");
+            
+        //      callback(null,age);
+        //  }
+        // } 
+     
+        // addition(20,11,function(err,result)
+        // {
+        //  err ? document.write(err):(age>=18) ?document.write("<br> ellegable for vote "):document.write("<br> not ellegable for vote");
+        // });
+     </script>
+</body>
+</script>

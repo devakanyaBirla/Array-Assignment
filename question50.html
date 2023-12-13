@@ -1,0 +1,14 @@
+<body>
+<script>
+    var n = prompt("enter number from start table");
+    var n1 = prompt("enter number to end table");
+    for(var i=n; i<=n1;i++){
+        document.write("Factors of "+i+" is :");
+        for(j=1; j<i; j++){
+            if(i%j==0)
+            document.write(j+" ");
+        }
+        document.write("<br>");
+    }
+</script>
+</body>

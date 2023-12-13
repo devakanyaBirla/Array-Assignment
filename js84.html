@@ -1,0 +1,21 @@
+<pre>
+<script>
+    var i,j,a,n=10;
+     for(i=1; i<=10; i++){
+        for(a=10,j=1; j<=10; j++,a--){
+            if(i==1 || i==10)
+              document.write("-");
+               else if(j==1 || j==10)
+              document.write("|");
+               else if(i==j )
+              document.write("\\");
+               else if(a==i)
+              document.write("/");
+               else
+              document.write(" ");
+
+        }
+       document.writeln();
+      }     
+</script>    
+</pre>

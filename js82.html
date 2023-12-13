@@ -1,0 +1,40 @@
+<!-- 
+    
+       1
+      212
+     32123
+    4321234
+   543212345 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <head name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <pre>
+<script>
+  var i, j, sp, n = 5;
+
+  for (i = 1; i <= n; i++) {
+    for (sp = n + 1 - i; sp >= 2; sp--) {
+      document.write(" ");
+    }
+    for (j = i; j >= 2; j--) {
+      document.write(j);
+    }
+    for (j = 1; j <= i; j++) {
+      document.write(j);
+    }
+    document.writeln();
+  }
+
+</script>        
+    </pre>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    function Patter(callback){
+        var n=prompt("Enter the number of Row")*1;
+         if(Number.isNaN(n)){
+        callback(new Error);
+         }
+         else{
+            callback(null,n);
+         }
+        }
+      Patter(function(err,n){
+        if(err){
+            document.write(err);
+        }
+        else{
+            document.write("Pattern<br>");
+            for(var i=1;i<=n;i++){
+                for(var j=1;j<=n;j++){
+                    document.write(j);
+                }
+                document.write("<br>");
+            }
+        }
+       })
+
+  </script>  
+</body>
+</html>
+
+

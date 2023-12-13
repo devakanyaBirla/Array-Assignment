@@ -1,0 +1,31 @@
+<!-- 5) WAP to find out the factorial of a number. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factorial(callback){
+         var n=prompt("Enter the num")*1;
+         if(Number.isNaN(n)){
+            document.write(new Error("Invalid Input"));
+         }
+         else{
+            callback(null,n);
+         }
+        }
+
+        factorial(function(err,n){
+          var fact=1,i;
+          for(i=1;i<=n;i++){
+             fact=(fact*i);
+          }
+          document.write(fact);
+        })
+    </script>
+    
+</body>
+</html>

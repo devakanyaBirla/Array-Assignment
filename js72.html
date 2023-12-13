@@ -1,0 +1,38 @@
+<!-- 
+    123456789
+     1234567
+      12345
+       123
+        1
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head charset="utf-8">
+        <title>title</title>
+    </head>
+
+<body>
+    <pre>
+<script>
+    var i, j, n = 10;
+    for (i = n; i >= 1; i--) {
+        for (sp = 1; sp <= n-i; sp++) {
+            document.write(" ");
+        }
+        for (j = 1; j <= i; j++) {
+            if (i % 2 == 1) {
+                document.write(" " + j);
+            }
+        }
+        document.write("<br>");
+    }
+</script>    
+            
+            </pre>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<body>
+    <script>
+        var n =prompt("Enter year from start");
+        var n1 =prompt("Enter year to end");
+        	var i,j,k;
+        for (i = n; i <= n1; i++) {
+            if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
+                document.write(+i + "is leap year <br>" );
+            }
+		}	
+    </script>
+</body>

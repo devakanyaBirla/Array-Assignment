@@ -1,0 +1,31 @@
+<!-- 3) WAP to find out the sum of N natural number. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+        function sum(callback){
+          var n=prompt("Enter the number")*1;
+          if(Number.isNaN(n)){
+          document.write(new Error("Please Enter the valid input"));
+          }
+          else{
+            callback(null,n);
+          }
+        }  
+
+        sum(function(err,n){
+          var sum=0,i;
+          for(i=1;i<=n;i++){
+            sum+=i;
+          }
+          document.write("<br> sum of natural number :"+sum);
+        })
+</script>
+    
+</body>
+</html>

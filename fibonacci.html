@@ -1,0 +1,18 @@
+<body>
+    <script>
+        function fibonacci() {
+            var i, n1 = 0, n2 = 1, nextterm;
+            var n = prompt("enter a number");
+            document.write("Fibonacci series")
+            for (i = 1; i <= n; i++) {
+                document.write("<br>"+n1);
+                nextTerm = n1 + n2;
+                n1 = n2;
+                n2 = nextTerm;
+            }
+        }
+    </script>
+    <form>
+        <input type="button" value=" fibonacci Series" onclick="fibonacci();">
+    </form>
+</body>

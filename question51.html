@@ -1,0 +1,20 @@
+<body>
+<script>
+    var n = prompt("enter number from start to check pallindrome number");
+    var n1 = prompt("enter number to end check pallindrome number");
+    var rev = 0;
+    for(var i=n; i<=n1;i++){
+        var r = 0;  s = i;
+        while (i > 0) {
+            r = i % 10;
+            rev = (rev * 10 + r);
+            i = parseInt(i / 10);
+       }
+        if (s == rev) {
+            document.write("pallindrome number is :"+rev);
+        }
+        document.write("<br>");
+        rev=0;
+    }
+</script>    
+</body>

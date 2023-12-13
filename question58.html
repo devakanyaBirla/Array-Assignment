@@ -1,0 +1,20 @@
+<body>
+    <script>
+        var n = prompt("Enter first Start") * 1;
+        var n1 = prompt("Enter second End") * 1;
+        var i, j;
+        document.write("Prime number is");
+        for (var i = n; i <= n1; i++) {
+            var flag = true;
+            var n2 = i;
+            for (j = 2; j <= n2 / 2; j++) {
+                if (n2 % j == 0) {
+                    flag = false;
+                    // break;
+                }
+            }
+                if (flag)
+                    document.write(n2 + "<br>");
+        }
+    </script>
+</body>

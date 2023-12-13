@@ -1,0 +1,20 @@
+<body>
+    <script>
+        var n = prompt("Enter the starting number to check reverse numbers") * 1;
+        var n1 = prompt("Enter the ending number to check reverse numbers") * 1;
+
+        for (var num = n; num <= n1; num++) {
+            var originalNum = num;
+            var rev = 0;
+            
+            while (originalNum != 0) {
+                var digit = originalNum % 10;
+                rev = rev * 10 + digit;
+                originalNum = parseInt(originalNum / 10);
+            }
+
+            document.write("Reverse number of " + num + " is: " + rev);
+            document.write("<br>");
+        }
+    </script>
+</body>

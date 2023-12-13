@@ -1,0 +1,40 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <head name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repeating Element</title>
+</head>
+
+<body>
+    <script>
+        function Repeating(callback) {
+            var n = prompt("Enter the size of Array") * 1;
+            if (Number.isNaN(n)) {
+                document.write(new Error("Invalid Input"));
+            }
+            else {
+                callback(null, n);
+            }
+
+        }
+        Repeating(function (err, n) {
+            var arr = [];
+            var i;
+
+            if (err) {
+                document.write(err);
+            }
+            else {
+                for (i = 0; i < n; i++) {
+                    arr[i] = prompt("Enter the Element in Array") * 1;
+                }
+                document.write("Original Array is :"+arr);
+            }
+        })
+    </script>
+</body>
+
+</html>

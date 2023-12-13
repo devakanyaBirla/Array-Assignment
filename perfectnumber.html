@@ -1,0 +1,17 @@
+<body>
+    <script>
+            var n = prompt("Enter number for perfect number");
+            var sum = 0;
+            var s = n;
+            for (var i = 1; i < n; i++) {
+                if (n % i == 0) {
+                    sum = sum + i;
+                }
+            }
+            if (s == sum)
+                document.write("perfect number");
+            else
+                document.write("Not a perfect number");
+
+    </script>
+</body>

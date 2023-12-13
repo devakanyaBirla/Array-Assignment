@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pattern(callback) {
+            var r = prompt("enter number of row") * 1;
+            if (Number.isNaN(r)) {
+                callback(new Error("please enter only number"));
+            }
+            else {
+                callback(null, r)
+            }
+        }
+
+        pattern(function (err, r) {
+            if (err) {
+                document.write(err);
+            }
+            else {
+                document.write("Pattern <br>");
+                for (var i = 1; i <= r; i++) {
+                    for (var j = 1; j <= i; j++) {
+                       document.write("*");
+                    }
+                    document.write("<br>");
+                }
+            }
+        })
+    </script>
+ 
+</body>
+</html>

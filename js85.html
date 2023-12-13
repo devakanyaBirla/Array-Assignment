@@ -1,0 +1,22 @@
+<pre>
+<script>
+    var i, j, m, n = 9;
+    m = parseInt(n / 2 + 1);
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= n; j++) {
+            if (i == m) {
+                document.write(Math.abs(j));
+            }
+            else if (j == m) {
+                document.write(Math.abs(i));
+            }
+            else {
+
+                document.write(" ");
+            }
+        }
+        document.writeln();
+
+    } 
+</script>    
+</pre>

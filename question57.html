@@ -1,0 +1,15 @@
+<body>
+    <script>
+        var n =prompt("Enter number from start");
+        var n1 = prompt("Enter number to end");
+        var i, j;
+		for (i = n; i <= n1; i++) {
+            s = 1;
+			for (j = 1; j <= i; j++) {
+				s = s * j;
+			}
+			document.write("<br>"+s + " is a factorial of :" + i);
+			s = 0;
+		}
+    </script>
+</body>

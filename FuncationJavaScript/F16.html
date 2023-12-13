@@ -1,0 +1,41 @@
+<!-- 7) WAP to check whether entered number is prime or not. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <head name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+      function Prime(callback){
+        var n=prompt("Enter the number")*1;
+        var flag=false;
+        if(Number.isNaN(n)){
+            document.write(new Error("Invalid input"));
+        
+        }
+        else{
+            callback(null,n);
+        }
+      }
+
+      Prime(function(err,n){
+        for (var i = 2; i <n/2; i++) {
+                  if(n%i==0){
+                        flag=false;
+                  }
+            }
+            if(flag && n>0){
+                  document.write("It's a Prime Number ");
+            }
+            else{
+                  document.write("<br>")
+            } 
+      });
+    </script>
+</body>
+
+</html>c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q1.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q2.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q3.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q4.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q5.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q6.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q7.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q8.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q9.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q10.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q11.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q12.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q13.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q14.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q15.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q16.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q17.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q18.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q19.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q20.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q21.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q22.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q23.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q24.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q25.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q26.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q27.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q28.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q29.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q30.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q31.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q32.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q33.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q34.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q35.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q36.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q37.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q38.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q39.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q40.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q41.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q42.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q43.html c:\Users\pc\Downloads\FunctionsInJS\FunctionsInJS\q44.html

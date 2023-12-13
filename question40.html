@@ -1,0 +1,25 @@
+<body>
+    <script>
+        var n = prompt("enter number for check Armstrong");
+       
+        var r = 0; s = n, sum = 0;
+        while (n > 0) {
+            r = n % 10;
+
+            var fact = 1;
+            for (var i = 1; i <= r; i++) {
+                fact = fact * i;
+            }
+            sum = sum + fact;
+            n = parseInt(n / 10);
+        }
+
+        if (s == sum) {
+            document.write("Strong number");
+        }
+
+        else {
+            document.write("Not a strong number");
+        }
+    </script>
+</body>

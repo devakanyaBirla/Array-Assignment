@@ -1,0 +1,46 @@
+<!-- 
+               *
+              *_*
+             *_*_*
+            *_*_*_*
+             *_*_*
+              *_*
+               *
+    
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <pre>
+<script>
+    var  i,j;
+        var sp;
+        for (i=1;i<=7;i++){
+           for(sp=7-i;sp>=1;sp--){
+           document.write(" ");
+           }
+           for(j=1;j<=i;j++){
+            if(i%2!=0){
+                if(i==3&&j==2||i==5&&(j==2||j==4)||i==7&&(j==2||j==4||j==6)){
+                  document.write("_ ");
+                }
+                else{
+            document.write("* ");
+            }
+        }
+        else{
+        document.write("  "+" ");
+        }
+
+         }
+         document.writeln();
+        }
+</script>    
+   </pre> 
+</body>
+</html> 
